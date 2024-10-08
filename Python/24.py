@@ -1,0 +1,1 @@
+#Take a list from the user and ask for an element which you want to delete from a list if that element is present in the list than print list after removing that list oherwise display error message "Element is not present in a list"
