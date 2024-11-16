@@ -31,3 +31,18 @@ insert into demo values(104,'Mahesh');
 insert into demo values(105,'Suresh');
 
 select * from demo;
+
+commit;
+
+savepoint s1;
+delete from demo where id = 101;
+savepoint s2;
+delete from demo where id = 103;
+savepoint s3;
+delete from demo where id = 104;
+savepoint s4;
+delete from demo where id = 105;
+
+select * from demo;
+
+rollback to s2;
